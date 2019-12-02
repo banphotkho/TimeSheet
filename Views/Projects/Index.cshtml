@@ -1,0 +1,715 @@
+﻿
+@{
+    ViewBag.Title = "Project setup";
+}
+
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Setup project</h2>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="@Url.Action("Dashboard_1", "Dashboards")">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a>Forms</a>
+            </li>
+            <li class="active breadcrumb-item">
+                <strong>Projects</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+    </div>
+</div>
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>From Add Proejcts</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link" href="">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li>
+                                <a href="#">Config option 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Config option 2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link" href="">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="ibox ">
+
+                                <div class="ibox-content">
+                                    <div class="hr-line-dashed"></div>
+                                    <form role="form" id="form">
+
+                                        <div class="form-grou row">
+                                            <label class="col-sm-3 col-form-label">Project code</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" id="projectid" name="projectid" class="form-control" required />
+                                            </div>
+                                        </div>
+                                        <div class="hr-line-dashed"></div>
+                                        <div class="form-grou row">
+                                            <label class="col-sm-3 col-form-label">Reference number</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" id="referenceno" name="referenceno" class="form-control" required />
+                                            </div>
+                                        </div>
+                                        <div class="hr-line-dashed"></div>
+                                        <div class="form-grou row">
+                                            <label class="col-sm-3 col-form-label">Descriptions</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" id="descriptions" name="descripitons" class="form-control" required />
+                                            </div>
+                                        </div>
+                                        <div class="hr-line-dashed"></div>
+                                        <div class="form-grou row">
+                                            <label class="col-sm-3 col-form-label">Job type</label>
+                                            <div class="col-sm-8">
+                                                <select id="jobtype" class="select2_demo_3 form-control">
+                                                    <option></option>
+                                                    <option value="Bahamas">Bahamas</option>
+                                                    <option value="Bahrain">Bahrain</option>
+                                                    <option value="Bangladesh">Bangladesh</option>
+                                                    <option value="Barbados">Barbados</option>
+                                                    <option value="Belarus">Belarus</option>
+                                                    <option value="Belgium">Belgium</option>
+                                                    <option value="Belize">Belize</option>
+                                                    <option value="Benin">Benin</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="hr-line-dashed"></div>
+                                        <div class="form-grou row">
+                                            <label class="col-sm-3 col-form-label">Channel</label>
+                                            <div class="col-sm-8">
+                                                <select id="channel" class="select2_demo_3 form-control">
+                                                    <option></option>
+                                                    <option value="Bahamas">Bahamas</option>
+                                                    <option value="Bahrain">Bahrain</option>
+                                                    <option value="Bangladesh">Bangladesh</option>
+                                                    <option value="Barbados">Barbados</option>
+                                                    <option value="Belarus">Belarus</option>
+                                                    <option value="Belgium">Belgium</option>
+                                                    <option value="Belize">Belize</option>
+                                                    <option value="Benin">Benin</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="hr-line-dashed"></div>
+                                        <div class="form-grou row">
+                                            <label class="col-sm-3 col-form-label">Owner</label>
+                                            <div class="col-sm-8">
+                                                <select id="owner" class="select2_demo_3 form-control">
+                                                    <option></option>
+                                                    <option value="Bahamas">Bahamas</option>
+                                                    <option value="Bahrain">Bahrain</option>
+                                                    <option value="Bangladesh">Bangladesh</option>
+                                                    <option value="Barbados">Barbados</option>
+                                                    <option value="Belarus">Belarus</option>
+                                                    <option value="Belgium">Belgium</option>
+                                                    <option value="Belize">Belize</option>
+                                                    <option value="Benin">Benin</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="hr-line-dashed"></div>
+                                        <div class="form-grou row">
+                                            <label class="col-sm-3 col-form-label">Assign To</label>
+                                            <div class="col-sm-8">
+                                                <select id="owner" class="select2_demo_3 form-control">
+                                                    <option></option>
+                                                    <option value="Bahamas">Bahamas</option>
+                                                    <option value="Bahrain">Bahrain</option>
+                                                    <option value="Bangladesh">Bangladesh</option>
+                                                    <option value="Barbados">Barbados</option>
+                                                    <option value="Belarus">Belarus</option>
+                                                    <option value="Belgium">Belgium</option>
+                                                    <option value="Belize">Belize</option>
+                                                    <option value="Benin">Benin</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="hr-line-dashed"></div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-8 col-sm-offset-5">
+                                                <button class="btn btn-white btn-sm" id="showtoast" type="submit">Cancel</button>
+                                                <button class="btn btn-primary btn-sm" id="btnSave" type="submit">Save changes</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8">
+            <div class="ibox float-e-margins">  
+                <div class="ibox-title">
+                    <h5>Project Details</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link" href="">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li>
+                                <a href="#">Config option 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Config option 2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link" href="">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="ibox-content">
+                    <div class="table-responsive">
+                        <input type="text" class="form-control form-control-sm m-b-xs" id="filter"
+                               placeholder="Search in table">
+
+                        <table id="mytable" class="footable table table-stripped" data-page-size="10" data-filter=#filter>
+                            <thead>
+                                <tr>
+
+                                    <th># </th>
+                                    <th>Project code</th>
+                                    <th>Project Ref.</th>
+                                    <th>Description</th>
+                                    <th>Project type</th>
+                                    <th>Channel</th>
+                                    <th>Owner</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>0001111</td>
+                                    <td>REQ11000</td>
+                                    <td>AS400 ILP</td>
+                                    <td>Project</td>
+                                    <td>Agency</td>
+                                    <td>Operation</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Development</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>0001111</td>
+                                    <td>REQ11000</td>
+                                    <td>AS400 ILP</td>
+                                    <td>Project</td>
+                                    <td>Agency</td>
+                                    <td>Operation</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                   <td>1</td>
+                                    <td>0001111</td>
+                                    <td>REQ11000</td>
+                                    <td>AS400 ILP</td>
+                                    <td>Project</td>
+                                    <td>Agency</td>
+                                    <td>Operation</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                   <td>1</td>
+                                    <td>0001111</td>
+                                    <td>REQ11000</td>
+                                    <td>AS400 ILP</td>
+                                    <td>Project</td>
+                                    <td>Agency</td>
+                                    <td>Operation</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                   <td>1</td>
+                                    <td>0001111</td>
+                                    <td>REQ11000</td>
+                                    <td>AS400 ILP</td>
+                                    <td>Project</td>
+                                    <td>Agency</td>
+                                    <td>Operation</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="6">
+                                        <ul class="pagination float-right"></ul>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="position: absolute; top: 20px; right: 20px;">
+
+    <div class="toast toast3 toast-bootstrap" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <i class="fa fa-newspaper-o"> </i>
+            <strong class="mr-auto m-l-sm">Notification</strong>
+            <small>2 seconds ago</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="toast-body">
+            Deleted has completed
+        </div>
+    </div>
+
+</div>
+
+<div style="position: absolute; top: 20px; right: 20px;">
+
+    <div class="toast toast4 toast-bootstrap" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <i class="fa fa-newspaper-o"> </i>
+            <strong class="mr-auto m-l-sm">Notification</strong>
+            <small>2 seconds ago</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="toast-body">
+            Deleted has fail!
+        </div>
+    </div>
+
+</div>
+
+
+<div style="position: absolute; top: 20px; right: 20px;">
+
+    <div class="toast toast2 toast-bootstrap" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <i class="fa fa-newspaper-o"> </i>
+            <strong class="mr-auto m-l-sm">Notification</strong>
+            <small>2 seconds ago</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="toast-body">
+            Add data to database Fail !
+        </div>
+    </div>
+
+</div>
+<div style="position: absolute; top: 20px; right: 20px;">
+
+    <div class="toast toast2 toast-bootstrap" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <i class="fa fa-newspaper-o"> </i>
+            <strong class="mr-auto m-l-sm">Notification</strong>
+            <small>2 seconds ago</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="toast-body">
+            Add data to database success !
+        </div>
+    </div>
+
+</div>
+
+
+@section Styles {
+    <environment names="Development">
+        <link rel="stylesheet" href="~/lib/footable/css/footable.core.css" />
+        <link rel="stylesheet" href="~/lib/iCheck/custom.css" />
+        <link rel="stylesheet" href="~/lib/clockpicker/clockpicker.css" />
+        <link rel="stylesheet" href="~/lib/daterangepicker/daterangepicker-bs3.css" />
+        <link rel="stylesheet" href="~/lib/switchery/switchery.css" />
+        <link rel="stylesheet" href="~/lib/ionRangeSlider/ion.rangeSlider.css" />
+        <link rel="stylesheet" href="~/lib/colorpicker/bootstrap-colorpicker.min.css" />
+        <link rel="stylesheet" href="~/lib/nouslider/jquery.nouislider.css" />
+        <link rel="stylesheet" href="~/lib/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" />
+        <link rel="stylesheet" href="~/lib/jasny-bootstrap/dist/css/jasny-bootstrap.min.css" />
+        <link rel="stylesheet" href="~/lib/bootstrap-datepicker/dist/css/datepicker3.css" />
+        <link rel="stylesheet" href="~/lib/cropper/dist/cropper.min.css" />
+        <link rel="stylesheet" href="~/lib/select2/dist/css/select2.min.css" />
+        <link rel="stylesheet" href="~/lib/select2/dist/css/select2-bootstrap4.min.css" />
+        <link rel="stylesheet" href="~/lib/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css" />
+        <link rel="stylesheet" href="~/lib/bootstrap-tagsinput/bootstrap-tagsinput.css" />
+    </environment>
+    <environment names="Staging,Production">
+        <link rel="stylesheet" href="~/lib/footable/css/footable.core.min.css" />
+        <link rel="stylesheet" href="~/lib/iCheck/custom.css" />
+        <link rel="stylesheet" href="~/lib/clockpicker/clockpicker.css" />
+        <link rel="stylesheet" href="~/lib/daterangepicker/daterangepicker-bs3.css" />
+        <link rel="stylesheet" href="~/lib/switchery/switchery.css" />
+        <link rel="stylesheet" href="~/lib/ionRangeSlider/ion.rangeSlider.css" />
+        <link rel="stylesheet" href="~/lib/colorpicker/bootstrap-colorpicker.min.css" />
+        <link rel="stylesheet" href="~/lib/nouslider/jquery.nouislider.css" />
+        <link rel="stylesheet" href="~/lib/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" />
+        <link rel="stylesheet" href="~/lib/jasny-bootstrap/dist/css/jasny-bootstrap.min.css" />
+        <link rel="stylesheet" href="~/lib/bootstrap-datepicker/dist/css/datepicker3.css" />
+        <link rel="stylesheet" href="~/lib/cropper/dist/cropper.min.css" />
+        <link rel="stylesheet" href="~/lib/select2/dist/css/select2.min.css" />
+        <link rel="stylesheet" href="~/lib/select2/dist/css/select2-bootstrap4.min.css" />
+        <link rel="stylesheet" href="~/lib/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css" />
+        <link rel="stylesheet" href="~/lib/bootstrap-tagsinput/bootstrap-tagsinput.css" />
+    </environment>
+}
+
+
+@section Scripts
+
+
+{
+
+    <environment names="Development,Staging,Production">
+        <script src="~/lib/footable/dist/footable.all.min.js"></script>
+        <script src="~/lib/jquery-ui/jquery-ui.js"></script>
+        <script src="~/lib/validate/jquery.validate.min.js"></script>
+    </environment>
+
+
+    <script type="text/javascript">
+    $(function () {
+
+        $('.footable').footable();
+        $('.footable2').footable();
+
+        let toast1 = $('.toast1');
+        let toast2 = $('.toast2');
+        let toast3 = $('.toast3');
+        let toast4 = $('.toast4');
+
+        toast1.toast({
+            delay: 3000,
+            animation: true
+        });
+        toast2.toast({
+            delay: 3000,
+            animation: true
+        });
+
+        toast3.toast({
+            delay: 3000,
+            animation: true
+        });
+        toast4.toast({
+            delay: 3000,
+            animation: true
+        });
+
+        poppulateDropDown();
+        LoadData()
+        sessionStorage.setItem("Id", 0);
+
+        $("#mytable").on('click', '.btnSelect', function () {
+
+            var currentRow = $(this).closest("tr");
+            var parser = new DOMParser;
+            var col1 = currentRow.find(".projectid").html();
+            sessionStorage.setItem("Id", col1);
+            /*===== for display on screen=====*/
+
+            $("#projectid").val(currentRow.find(".projectcode").html());
+            $("#referenceno").val(currentRow.find(".projectref").html());
+            $("#descriptions").val(currentRow.find(".projectdesc").html());
+            $("#jobtype").val(currentRow.find(".projecttype").html());
+            $("#channel").val(currentRow.find(".projectchannel").html());
+            $("#owner").val(currentRow.find(".projectdept").html());
+
+            var jobtype = currentRow.find(".projecttype").html();
+            var owner = currentRow.find(".projectdept").html();
+            var channel = currentRow.find(".projectchannel").html();
+
+            selectByText($.trim(jobtype), $.trim(channel), $.trim(owner));
+
+            //alert(jobtype + ' ' + channel + ' ' + owner);
+            ///*=====Select Combobox */
+            
+            //$('#jobtype option')
+            //    .filter(function () { return $.trim($(this).text()) == $.trim(jobtype); })
+            //    .attr('selected', true);
+
+            //$('#owner option')
+            //    .filter(function () { return $.trim($(this).text()) == $.trim(owner); })
+            //    .attr('selected', true);
+
+            //$('#channel option')
+            //    .filter(function () { return $.trim($(this).text()) == $.trim(channel); })
+            //    .attr('selected', true);
+
+        });
+
+        $("#mytable").on('click', '.btnDelete', function () {
+            var r = confirm("Your want to delete this record !" + col1);
+            if (r == true) {
+                var currentRow = $(this).closest("tr");
+                var col1 = currentRow.find(".projectid").html();
+                var param = {
+                    id: parseInt(col1)
+                }
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("DeleteRecord", "Projects")',
+                    contentType: 'application/json; charset=utf-8',
+                    dataType: "json",
+                    data: JSON.stringify(param),
+                    success: function () {
+
+                        $(this).find(".toast-body").text("Delete data has done");
+                        toast3.toast('show');
+                        $("#Jobtype").val("");
+                        sessionStorage.setItem("Id", 0);
+                        LoadData();
+                    },
+                    error: function () {
+                        $(this).find(".toast-body").text("Delete data has Fail!");
+                        toast4.toast('show');
+                    }
+                });
+            }
+        });
+
+
+        $("#btnSave").click(function () {
+
+            var formStatus = $('#form').validate().form();
+            if (formStatus == true) {
+                var fullDate = new Date();
+                var twoDigitMonth = fullDate.getMonth() + ""; if (twoDigitMonth.length == 1) twoDigitMonth = "0" + twoDigitMonth;
+                var twoDigitDate = fullDate.getDate() + ""; if (twoDigitDate.length == 1) twoDigitDate = "0" + twoDigitDate;
+                var currentDate = twoDigitDate + "/" + twoDigitMonth + "/" + fullDate.getFullYear(); console.log(currentDate);
+                var id = sessionStorage.getItem("Id");
+
+                var param = {
+                    Id: parseInt(id),
+                    ProjectCode: $("#projectid").val(),
+                    Descriptions: $("#descriptions").val(),
+                    ProjectTypeId: parseInt($("#jobtype :selected").val()),
+                    ReferenceNo: $("#referenceno").val(),
+                    ChannelId: parseInt($("#channel :selected").val()),
+                    DepartmentId: parseInt($("#owner :selected").val()),
+                    CrtUser: "Banphotkho",
+                    CrtDate: fullDate
+                }
+
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("SavePojects", "Projects")',
+                    contentType: 'application/json; charset=utf-8',
+                    dataType: "json",
+                    data: JSON.stringify(param),
+                    success: function () {
+
+                        $(this).find(".toast-body").text("Add data to database success!");
+                        toast2.toast('show');
+                        $("#projectid").val("");
+                        $("#descriptions").val("");
+                        $("#jobtype").val("");
+                        $("#referenceno").val("");
+                        $("#channel").val("");
+                        $("#owner").val("");
+                        sessionStorage.setItem("Id", 0);
+                        LoadData();
+                    },
+                    error: function (data) {
+                        $(this).find(".toast-body").text("Add data to database Fail!");
+                        toast1.toast('show');
+
+                    }
+                });
+                return false;
+            }
+        });
+
+        function LoadData() {
+            debugger;
+            $("#mytable tbody tr").remove();
+            $.ajax({
+                type: 'GET',
+                contentType: 'application/json; charset=utf-8',
+                url: '@Url.Action("GetAllData","Projects")',
+                dataType: 'json',
+                data: {},
+                success: function (data) {
+                    var items = '';
+                    $.each(data, function (i, item) {
+                        var rows = "<tr>"
+                            + "<td class='projectid'>" + item.projectId + "</td>"
+                            + "<td class='projectcode'>" + item.projectCode + "</td>"
+                            + "<td class='projectref'>" + item.projectrefrence + "</td>"
+                            + "<td class='projectdesc'>" + item.projectDescription + "</td>"
+                            + "<td class='projecttype'>" + item.projectType + "</td>"
+                            + "<td class='projectchannel'>" + item.channelsName + "</td>"
+                            + "<td class='projectdept'>" + item.departmentName + "</td>"
+                            + "<td class='text-right'><div class='btn-group'><button class='btn-white btn btn-xs btnSelect'>Edit</button><button class='btn-white btn btn-xs btnDelete'>Delete</button></div></td>";
+                        $('#mytable tbody').append(rows);
+
+                    });
+                },
+                error: function (ex) {
+                    var r = jQuery.parseJSON(response.responseText);
+                    alert("Message: " + r.Message);
+                    alert("StackTrace: " + r.StackTrace);
+                    alert("ExceptionType: " + r.ExceptionType);
+                }
+            });
+            return false;
+        }
+
+        function poppulateDropDown() {
+
+            // jobtype
+            $.ajax({
+                type: 'GET',
+                contentType: 'application/json; charset=utf-8',
+                url: '@Url.Action("GetJobType","Projects")',
+                dataType: 'json',
+                data: {},
+                success: function (data) {
+                    var items = '';
+                    $('#jobtype').empty();
+                    $('#jobtype ').append('<option></option>');
+                    $.each(data, function (i, item) {
+                        $('#jobtype').append('<option value="' + item.id + '">' + item.descriptions + '</option>');
+                    });
+                },
+                error: function (ex) {
+                    var r = jQuery.parseJSON(response.responseText);
+                    alert("Message: " + r.Message);
+                    alert("StackTrace: " + r.StackTrace);
+                    alert("ExceptionType: " + r.ExceptionType);
+                }
+            });
+
+            $.ajax({
+                type: 'GET',
+                contentType: 'application/json; charset=utf-8',
+                url: '@Url.Action("GetChannel","Projects")',
+                dataType: 'json',
+                data: {},
+                success: function (data) {
+                    var items = '';
+                    $('#channel').empty();
+                    $('#channel').append('<option></option>');
+                    $.each(data, function (i, item) {
+                        $('#channel').append('<option value="' + item.id + '">' + item.channelName + '</option>');
+                    });
+                },
+                error: function (ex) {
+                    var r = jQuery.parseJSON(response.responseText);
+                    alert("Message: " + r.Message);
+                    alert("StackTrace: " + r.StackTrace);
+                    alert("ExceptionType: " + r.ExceptionType);
+                }
+            });
+
+            $.ajax({
+                type: 'GET',
+                contentType: 'application/json; charset=utf-8',
+                url: '@Url.Action("GetDepartment","Projects")',
+                dataType: 'json',
+                data: {},
+                success: function (data) {
+                    var items = '';
+                    $('#owner   ').empty();
+                    $('#owner').append('<option></option>');
+                    $.each(data, function (i, item) {
+                        $('#owner').append('<option value="' + item.id + '">' + item.departmentName + '</option>');
+                    });
+                },
+                error: function (ex) {
+                    var r = jQuery.parseJSON(response.responseText);
+                    alert("Message: " + r.Message);
+                    alert("StackTrace: " + r.StackTrace);
+                    alert("ExceptionType: " + r.ExceptionType);
+                }
+            });
+
+        }
+
+        function selectByText(jobtype,channel,department) {
+            $('#jobtype option')
+                .filter(function () { return $.trim($(this).text()) == jobtype; })
+                 .prop('selected', true);
+
+            $('#channel option')
+                .filter(function () { return $.trim($(this).text()) == channel; })
+                 .prop('selected', true);
+
+            $('#owner option')
+                .filter(function () { return $.trim($(this).text()) == department; })
+                .prop('selected', true);
+        }
+
+
+        function validatetion() {
+            $("#form").validate({
+                rules: {
+                    password: {
+                        required: true,
+                        minlength: 3
+                    },
+                    url: {
+                        required: true,
+                        url: true
+                    },
+                    number: {
+                        required: true,
+                        number: true
+                    },
+                    min: {
+                        required: true,
+                        minlength: 6
+                    },
+                    max: {
+                        required: true,
+                        maxlength: 4
+                    }
+                }
+            });
+        }
+
+    });
+
+
+    </script>
+}  
+
+
+

@@ -1,0 +1,438 @@
+﻿ 
+@{
+    ViewBag.Title = "Job type";
+}
+ 
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Employee Type</h2>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="@Url.Action("Dashboard_1", "Dashboards")">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a>Forms</a>
+            </li>
+            <li class="active breadcrumb-item">
+                <strong>Employee Type</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+    </div>
+</div>
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>From Add employee type</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link" href="">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li>
+                                <a href="#">Config option 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Config option 2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link" href="">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="ibox ">
+
+                                <div class="ibox-content">
+                                    <div class="hr-line-dashed"></div>
+                                    <form role="form" id="form">
+                                        <div class="form-group row">
+                                            <label class="col-sm-3 col-form-label">Employee type:</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" id="employeetype" name="employeetype" class="form-control" required> <span class="form-text m-b-none">Temporaly,Permanance</span>
+                                            </div>
+
+                                        </div>
+                                        <div class="hr-line-dashed"></div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-8 col-sm-offset-2">
+                                                <button class="btn btn-white btn-sm" id="showtoast" type="submit">Cancel</button>
+                                                <button class="btn btn-primary btn-sm" id="btnSave" type="submit">Save changes</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-7">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Employee type details</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link" href="">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li>
+                                <a href="#">Config option 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Config option 2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link" href="">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="ibox-content">
+                    <div class="table-responsive">
+                        <input type="text" class="form-control form-control-sm m-b-xs" id="filter"
+                               placeholder="Search in table">
+
+                        <table id="mytable" class="footable table table-stripped" data-page-size="10" data-filter=#filter>
+                            <thead>
+                                <tr>
+
+                                    <th># </th>
+                                    <th>Channel description</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Development</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Development</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Development</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Development</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="6">
+                                        <ul class="pagination float-right"></ul>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="position: absolute; top: 20px; right: 20px;">
+
+    <div class="toast toast3 toast-bootstrap" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <i class="fa fa-newspaper-o"> </i>
+            <strong class="mr-auto m-l-sm">Notification</strong>
+            <small>2 seconds ago</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="toast-body">
+            Deleted has completed
+        </div>
+    </div>
+
+</div>
+
+<div style="position: absolute; top: 20px; right: 20px;">
+
+    <div class="toast toast4 toast-bootstrap" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <i class="fa fa-newspaper-o"> </i>
+            <strong class="mr-auto m-l-sm">Notification</strong>
+            <small>2 seconds ago</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="toast-body">
+            Deleted has fail!
+        </div>
+    </div>
+
+</div>
+
+
+<div style="position: absolute; top: 20px; right: 20px;">
+
+    <div class="toast toast2 toast-bootstrap" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <i class="fa fa-newspaper-o"> </i>
+            <strong class="mr-auto m-l-sm">Notification</strong>
+            <small>2 seconds ago</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="toast-body">
+            Add data to database Fail !
+        </div>
+    </div>
+
+</div>
+<div style="position: absolute; top: 20px; right: 20px;">
+
+    <div class="toast toast2 toast-bootstrap" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <i class="fa fa-newspaper-o"> </i>
+            <strong class="mr-auto m-l-sm">Notification</strong>
+            <small>2 seconds ago</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="toast-body">
+            Add data to database success !
+        </div>
+    </div>
+
+</div>
+
+
+@section Styles {
+    <environment names="Development">
+        <link rel="stylesheet" href="~/lib/footable/css/footable.core.css" />
+    </environment>
+    <environment names="Staging,Production">
+        <link rel="stylesheet" href="~/lib/footable/css/footable.core.min.css" />
+    </environment>
+}
+
+
+@section Scripts
+
+
+{
+
+    <environment names="Development,Staging,Production">
+        <script src="~/lib/footable/dist/footable.all.min.js"></script>
+        <script src="~/lib/jquery-ui/jquery-ui.js"></script>
+        <script src="~/lib/validate/jquery.validate.min.js"></script>
+    </environment>
+
+    <script type="text/javascript">
+    $(function () {
+
+        $('.footable').footable();
+        $('.footable2').footable();
+
+        let toast1 = $('.toast1');
+        let toast2 = $('.toast2');
+        let toast3 = $('.toast3');
+        let toast4 = $('.toast4');
+    
+        toast1.toast({
+            delay: 3000,
+            animation: true
+        });
+        toast2.toast({
+            delay: 3000,
+            animation: true
+        });
+
+        toast3.toast({
+            delay: 3000,
+            animation: true
+        });
+        toast4.toast({
+            delay: 3000,
+            animation: true
+        });
+
+        LoadData()
+        sessionStorage.setItem("Id", 0);
+
+        $("#mytable").on('click', '.btnSelect', function () {
+
+            var value = sessionStorage.getItem("Id");
+            var currentRow = $(this).closest("tr");
+            var parser = new DOMParser;
+            var col1 = currentRow.find(".myitem").html();
+            var col2 = currentRow.find(".myactivity").html();
+            sessionStorage.setItem("Id", col1);
+            var value = sessionStorage.getItem("Id");
+            var dom = parser.parseFromString(
+                '<!doctype html><body>' + col2,
+                'text/html');
+            var decodedString = dom.body.textContent;
+            $("#employeetype").val(decodedString);
+        });
+
+        $("#mytable").on('click', '.btnDelete', function () {
+            var r = confirm("Your want to delete this record !" + col1);
+            if (r == true) {
+                var currentRow = $(this).closest("tr");
+                var col1 = currentRow.find(".myitem").html();
+                var param = {
+                    id: parseInt(col1)
+                }
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("DeleteRecord", "EmployeeType")',
+                    contentType: 'application/json; charset=utf-8',
+                    dataType: "json",
+                    data: JSON.stringify(param),
+                    success: function () {
+
+                        $(this).find(".toast-body").text("Delete data has done");
+                        toast3.toast('show');
+                        $("#employeetype").val("");
+                        sessionStorage.setItem("Id", 0);
+                        LoadData();
+                    },
+                    error: function () {
+                        $(this).find(".toast-body").text("Delete data has Fail!");
+                        toast4.toast('show');
+                    }
+                });
+            }
+        });
+
+
+        $("#btnSave").click(function () {
+             
+            var formStatus = $('#form').validate().form();
+            if (formStatus == true) {
+                var fullDate = new Date();
+                var twoDigitMonth = fullDate.getMonth() + ""; if (twoDigitMonth.length == 1) twoDigitMonth = "0" + twoDigitMonth;
+                var twoDigitDate = fullDate.getDate() + ""; if (twoDigitDate.length == 1) twoDigitDate = "0" + twoDigitDate;
+                var currentDate = twoDigitDate + "/" + twoDigitMonth + "/" + fullDate.getFullYear(); console.log(currentDate);
+                var id = sessionStorage.getItem("Id");
+
+                var param = {
+                    Id: parseInt(id),
+                    EmployeeTypeName: $("#employeetype").val(),
+                    CrtUser: "Banphotkho",
+                    CrtDate: fullDate
+                }
+               
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("SaveEmpType", "EmployeeType")',
+                    contentType: 'application/json; charset=utf-8',
+                    dataType: "json",
+                    data: JSON.stringify(param),
+                    success: function () {
+
+                        $(this).find(".toast-body").text("Add data to database success!");
+                        toast2.toast('show');
+                        $("#employeetype").val("");
+                        sessionStorage.setItem("Id", 0);
+                        LoadData();
+                    },
+                    error: function (data) {
+                        $(this).find(".toast-body").text("Add data to database Fail!");
+                        toast1.toast('show');
+                        alert(data);
+                    }
+                });
+                return false;
+            }
+        });
+
+        function LoadData() {
+            debugger;
+            $("#mytable tbody tr").remove();
+            $.ajax({
+                type: 'GET',
+                contentType: 'application/json; charset=utf-8',
+                url: '@Url.Action("GetAllData","EmployeeType")',
+                dataType: 'json',
+                data: {},
+                success: function (data) {
+                    var items = '';
+
+                    $.each(data, function (i, item) {
+                        debugger;
+
+                        var rows = "<tr>"
+                            + "<td class='myitem'>" + item.id + "</td>"
+                            + "<td class='myactivity'>" + item.employeeTypeName + "</td>"
+                            + "<td class='text-right'><div class='btn-group'><button class='btn-white btn btn-xs btnSelect'>Edit</button><button class='btn-white btn btn-xs btnDelete'>Delete</button></div></td>";
+                        $('#mytable tbody').append(rows);
+                    });
+                },
+                error: function (ex) {
+                    var r = jQuery.parseJSON(response.responseText);
+                    alert("Message: " + r.Message);
+                    alert("StackTrace: " + r.StackTrace);
+                    alert("ExceptionType: " + r.ExceptionType);
+                }
+            });
+            return false;
+        }
+
+        function validatetion() {
+            $("#form").validate({
+                rules: {
+                    password: {
+                        required: true,
+                        minlength: 3
+                    },
+                    url: {
+                        required: true,
+                        url: true
+                    },
+                    number: {
+                        required: true,
+                        number: true
+                    },
+                    min: {
+                        required: true,
+                        minlength: 6
+                    },
+                    max: {
+                        required: true,
+                        maxlength: 4
+                    }
+                }
+            });
+        }
+
+    });
+
+
+    </script>
+}  
+
+
+

@@ -1,0 +1,50 @@
+﻿<Properties StartupConfiguration="{8CF0138A-7ECD-4617-A536-982D89B8549C}|Default">
+  <MonoDevelop.Ide.ItemProperties.TimeSheet PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Timesheets/Index.cshtml">
+    <Files>
+      <File FileName="Controllers/TImesheetsController.cs" Line="88" Column="38" />
+      <File FileName="Views/Timesheets/Index.cshtml" Line="373" Column="58" />
+      <File FileName="Controllers/ProjectsController.cs" Line="113" Column="10" />
+      <File FileName="Views/Projects/Index.cshtml" Line="505" Column="75" />
+      <File FileName="Models/Acitivity.cs" Line="11" Column="35" />
+      <File FileName="Models/Project.cs" Line="14" Column="35" />
+      <File FileName="Views/Channel/Index.cshtml" Line="279" Column="12" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TimeSheet" expanded="True">
+            <Node name="TimeSheet" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Channel" expanded="True" />
+                <Node name="Projects" expanded="True" />
+                <Node name="Shared" expanded="True" />
+                <Node name="Timesheets" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/banphotkho/Developer/Projects/dotnet/TimeSheet/Views/Department/20iee7yj.gts~" relfile="Views/Department/20iee7yj.gts~" line="55" column="1" />
+      <Breakpoint file="/Users/banphotkho/Developer/Projects/dotnet/TimeSheet/Views/Department/20iee7yj.gts~" relfile="Views/Department/20iee7yj.gts~" line="56" column="1" />
+      <Breakpoint file="/Users/banphotkho/Developer/Projects/dotnet/TimeSheet/Controllers/ActivitiesController.cs" relfile="Controllers/ActivitiesController.cs" line="63" column="1" />
+      <Breakpoint file="/Users/banphotkho/Developer/Projects/dotnet/TimeSheet/Controllers/SectionDeptController.cs" relfile="Controllers/SectionDeptController.cs" line="35" column="1" />
+      <Breakpoint file="/Users/banphotkho/Developer/Projects/dotnet/TimeSheet/Controllers/SectionDeptController.cs" relfile="Controllers/SectionDeptController.cs" line="36" column="1" />
+      <Breakpoint file="/Users/banphotkho/Developer/Projects/dotnet/TimeSheet/Controllers/TImesheetsController.cs" relfile="Controllers/TImesheetsController.cs" line="68" column="1" />
+      <Breakpoint file="/Users/banphotkho/Developer/Projects/dotnet/TimeSheet/Controllers/TImesheetsController.cs" relfile="Controllers/TImesheetsController.cs" line="69" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
